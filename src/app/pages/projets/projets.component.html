@@ -1,12 +1,103 @@
-<section id="projets" class="min-h-screen bg-gray-100 p-6 ml-8" tabindex="0">
-    <h2 class="text-4xl font-bold mb-4">Projets</h2>
-    <div class="mb-6">
-      <h3 class="text-2xl font-semibold">Projet Exemple</h3>
-      <p>Description du projet et de son contexte.</p>
-      <a href="assets/documents/exemple.pdf" download class="text-blue-500 underline transition duration-300 ease-in-out hover:text-blue-700 focus:text-blue-700">
-        Télécharger le PDF
-      </a>
+<section id="projets" class="bg-gray-100 pt-10 pb-10" tabindex="0">
+  <div class="container mx-auto">
+    <!-- Titre centré -->
+    <h2 class="text-4xl font-bold mb-4 text-gray-800 text-center">Projets</h2>
+    
+    <!-- Texte d'introduction pour la section consigne -->
+    <p class="text-gray-700 text-center p-5 mb-8">
+      Chaque carte présente un projet avec une image d’aperçu uniforme, assurant une expérience visuelle cohérente et accessible. Consultez les détails, téléchargez les documents ou visitez les liens pour en savoir plus.
+    </p>
+    
+    <!-- Grille des cartes projets -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Projet 1 : Rapport Digital & Développement -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md">
+        <!-- En-tête -->
+        <div class="flex items-center p-4">
+          <img src="assets/images/logo.jpg" alt="Logo Rapport Digital" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-800">Rapport Digital & Développement</h3>
+            <p class="text-sm text-gray-500">Stratégie Digitale & Solution Numérique</p>
+          </div>
+        </div>
+        <!-- Image principale avec taille uniforme -->
+        <img src="assets/images/digital-report.jpg" alt="Aperçu du Rapport Digital" class="w-full h-48 object-cover">
+        <!-- Description et actions -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm mb-4">
+            Rapport détaillé présentant une stratégie digitale complète et le développement d’une solution numérique innovante.
+          </p>
+          <div class="flex items-center justify-center space-x-4">
+            <a href="assets/documents/rapport-digital.pdf" download target="_blank"
+               class="inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+              Télécharger PDF
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projet 2 : Site Vitrine -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md">
+        <!-- En-tête -->
+        <div class="flex items-center p-4">
+          <img src="assets/images/logo.jpg" alt="Logo Site Vitrine" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-800">Site Vitrine</h3>
+            <p class="text-sm text-gray-500">Déployé sur Vercel</p>
+          </div>
+        </div>
+        <!-- Image principale avec taille uniforme -->
+        <img src="assets/images/site-vitrine.jpg" alt="Aperçu du Site Vitrine" class="w-full h-48 object-cover">
+        <!-- Description et actions -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm mb-4">
+            Site vitrine moderne conçu avec TailwindCSS, hébergé sur Vercel, permettant de présenter visuellement la solution.
+          </p>
+          <div class="flex items-center justify-center space-x-4">
+            <a href="https://vercel.com/lykkss-projects/projet-tailwincss" target="_blank"
+               class="inline-block px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
+              Voir sur Vercel
+            </a>
+            <a href="https://github.com/Lykkss/projet-tailwincss.git" target="_blank"
+               class="inline-block px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Projet 3 : Festival Website -->
+      <div class="bg-white rounded-lg overflow-hidden shadow-md">
+        <!-- En-tête -->
+        <div class="flex items-center p-4">
+          <img src="assets/images/logo.jpg" alt="Logo Festival Website" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-4">
+            <h3 class="text-lg font-semibold text-gray-800">Festival Website</h3>
+            <p class="text-sm text-gray-500">ReactJS + TailwindCSS | WordPress backend</p>
+          </div>
+        </div>
+        <!-- Image principale avec taille uniforme -->
+        <img src="assets/images/festival.jpg" alt="Aperçu du Festival Website" class="w-full h-48 object-cover">
+        <!-- Description et actions -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm mb-4">
+            Site interactif pour un festival, réalisé en ReactJS avec TailwindCSS pour le front-end et WordPress pour le back-end. Documentation fournie.
+          </p>
+          <div class="flex items-center justify-center space-x-4">
+            <a href="https://github.com/Lykkss/react-frontend.git" target="_blank"
+               class="inline-block px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
+              GitHub
+            </a>
+            <a href="assets/documents/festival-doc.pdf" download target="_blank"
+               class="inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+              Télécharger Doc
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
-    <!-- Ajoutez d'autres projets si besoin -->
-  </section>
-  
+  </div>
+</section>
+
