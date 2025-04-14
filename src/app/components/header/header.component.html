@@ -1,17 +1,44 @@
-<nav class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white p-6 shadow-xl" role="navigation" aria-label="Navigation principale">
+<!-- header.component.html -->
+<nav
+  class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6 shadow-xl"
+  role="navigation"
+  aria-label="Navigation principale"
+>
   <!-- Section Photo de Profil -->
   <div class="flex flex-col items-center">
-    <img src="assets/images/portfolio.jpg" alt="Photo de profil de Quaglieri Lisa" class="rounded-full w-32 h-32 border-4 border-white ring-4 ring-blue-500 transition-transform duration-300 hover:scale-105">
-    <h2 class="mt-4 text-xl font-bold">Quaglieri Lisa</h2>
+    <img
+      src="assets/images/portfolio.jpg"
+      alt="Photo de profil de Lisa Quaglieri"
+      class="rounded-full w-32 h-32 border-4 border-white ring-4 ring-blue-500 transition-transform duration-300 hover:scale-105"
+    />
+    <h2 class="mt-4 text-xl font-bold">Lisa Quaglieri</h2>
   </div>
 
-  <!-- Liens des réseaux sociaux -->
-  <div class="mt-6 flex justify-center space-x-4">
-    <a href="https://github.com/Lykkss" target="_blank" rel="noopener noreferrer" aria-label="Github" class="transition-colors duration-300 hover:text-blue-300">
-      <img src="assets/icons/github.svg" alt="Icône Github" class="w-6 h-6">
+  <!-- Icônes de réseaux sociaux -->
+  <div class="mt-6 flex justify-center space-x-6">
+    <!-- Icône LinkedIn -->
+    <a
+      href="https://www.linkedin.com/in/lisa-quaglieri"
+      aria-label="Profil LinkedIn"
+      class="flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-blue-400"
+      target="_blank"
+      rel="noopener"
+    >
+      <div class="p-4 bg-blue-500 rounded-full shadow-lg transition transform hover:scale-110">
+        <img src="assets/icons/linkedin.svg" alt="Logo LinkedIn" class="h-12 w-12" />
+      </div>
     </a>
-    <a href="https://linkedin.com/in/lisa-quaglieri" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="transition-colors duration-300 hover:text-blue-300">
-      <img src="assets/icons/linkedin.svg" alt="Icône LinkedIn" class="w-6 h-6">
+    <!-- Icône GitHub -->
+    <a
+      href="https://github.com/lisa-quaglieri"
+      aria-label="Profil GitHub"
+      class="flex flex-col items-center focus:outline-none focus:ring-2 focus:ring-blue-400"
+      target="_blank"
+      rel="noopener"
+    >
+      <div class="p-4 bg-blue-500 rounded-full shadow-lg transition transform hover:scale-110">
+        <img src="assets/icons/github.svg" alt="Logo GitHub" class="h-12 w-12" />
+      </div>
     </a>
   </div>
 
@@ -19,49 +46,119 @@
   <ul class="mt-8 space-y-4">
     <!-- Présentation -->
     <li>
-      <a href="#presentation" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <!-- Si tu utilises Angular Router, remplacer "href" par "[routerLink]" -->
+      <a
+        href="#presentation"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon Home -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l9-7 9 7v10a1 1 0 01-1 1h-4a1 1 0 01-1-1v-6H9v6a1 1 0 01-1 1H4a1 1 0 01-1-1V10z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 10l9-7 9 7v10a1 1 0 01-1 1h-4a1 1 0 01-1-1v-6H9v6a1 1 0 01-1 1H4a1 1 0 01-1-1V10z"
+          />
         </svg>
         <span>Présentation</span>
       </a>
     </li>
     <!-- À propos -->
     <li>
-      <a href="#a-propos" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <a
+        href="#a-propos"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon User -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 10-8 0v4m8 0a4 4 0 01-8 0m8 0v6a4 4 0 01-8 0v-6m8 0h-8" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 11V7a4 4 0 10-8 0v4m8 0a4 4 0 01-8 0m8 0v6a4 4 0 01-8 0v-6m8 0h-8"
+          />
         </svg>
         <span>À propos</span>
       </a>
     </li>
     <!-- Compétences -->
     <li>
-      <a href="#competences" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <a
+        href="#competences"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon Code -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M16 18l6-6-6-6M8 6l-6 6 6 6"
+          />
         </svg>
         <span>Compétences</span>
       </a>
     </li>
     <!-- Projets -->
     <li>
-      <a href="#projets" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <a
+        href="#projets"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon Folder -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"
+          />
         </svg>
         <span>Projets</span>
       </a>
     </li>
     <!-- Parcours -->
     <li>
-      <a href="#parcours" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <a
+        href="#parcours"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon Academic Cap -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+        >
           <path d="M10 2L2 7l8 5 8-5-8-5z" />
           <path d="M2 12l8 5 8-5" />
         </svg>
@@ -70,10 +167,25 @@
     </li>
     <!-- Contact -->
     <li>
-      <a href="#contact" class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:bg-gray-800 focus:outline-none">
+      <a
+        href="#contact"
+        class="flex items-center gap-2 py-2 px-4 rounded transition-colors duration-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
         <!-- Icon Mail -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          />
         </svg>
         <span>Contact</span>
       </a>
