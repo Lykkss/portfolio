@@ -1,103 +1,97 @@
-<!-- projets.component.html -->
-<section id="projets" class="bg-gray-100 pt-10 pb-10" tabindex="0" aria-label="Section Projets">
+<section id="projets" class="bg-gray-100 pt-10 pb-10" aria-labelledby="projets-title" role="region">
   <div class="container mx-auto">
-    <!-- Titre centré -->
-    <h2 class="text-4xl font-bold mb-4 text-gray-800 text-center">Projets</h2>
-    
-    <!-- Texte d'introduction -->
+    <!-- Titre principal -->
+    <h2 id="projets-title" class="text-4xl font-bold mb-4 text-gray-800 text-center">Projets</h2>
+
     <p class="text-gray-700 text-center p-5 mb-8">
-      Chaque carte présente un projet avec une image d’aperçu uniforme, assurant une expérience visuelle cohérente et accessible. Consultez les détails, téléchargez les documents ou visitez les liens pour en savoir plus.
+      Chaque carte présente un projet avec une image d’aperçu uniforme. Consultez les détails, téléchargez les documents ou visitez les liens pour en savoir plus.
     </p>
-    
-    <!-- Grille des cartes projets -->
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      
-      <!-- Projet 1 : Rapport Digital & Développement -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <!-- En-tête -->
+
+    <!-- Grille des projets -->
+    <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3" role="list">
+
+      <!-- Projet 1 : Rapport MotripGo -->
+      <li class="bg-white rounded-lg overflow-hidden shadow-md" role="listitem" aria-labelledby="motripgo-title">
         <div class="flex items-center p-4">
-          <img src="assets/images/logo.jpg" alt="Logo Rapport Digital" class="w-12 h-12 rounded-full object-cover">
+          <img src="assets/images/logo.jpg" alt="Logo du projet MotripGo" class="w-12 h-12 rounded-full object-cover">
           <div class="ml-4">
-            <h3 class="text-lg font-semibold text-gray-800">Rapport Digital & Développement</h3>
-            <p class="text-sm text-gray-500">Stratégie Digitale & Solution Numérique</p>
+            <h3 id="motripgo-title" class="text-lg font-semibold text-gray-800">MotripGo</h3>
+            <p class="text-sm text-gray-500">Stratégie digitale et développement</p>
           </div>
         </div>
-        <!-- Image principale -->
-        <img src="assets/images/digital-report.jpg" alt="Aperçu du Rapport Digital" class="w-full h-48 object-cover">
-        <!-- Description et actions -->
+        <img src="assets/images/digital-report.jpg" alt="Aperçu du projet MotripGo" class="w-full h-48 object-cover">
         <div class="p-4">
           <p class="text-gray-700 text-sm mb-4">
-            Rapport détaillé présentant une stratégie digitale complète et le développement d’une solution numérique innovante.
+            Rapport final présentant l'étude de marché, la stratégie digitale, le design UX et les choix techniques du projet MotripGo.
           </p>
-          <div class="flex items-center justify-center space-x-4">
-            <a href="assets/documents/rapport-digital.pdf" download target="_blank"
+          <div class="flex items-center justify-center">
+            <a href="assets/documents/Projet-MotripGo-rapport-final.pdf" download target="_blank" rel="noopener"
+               aria-label="Télécharger le rapport final du projet MotripGo au format PDF, en français, taille : 3,2 mégaoctets"
                class="inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-              Télécharger PDF
+              Télécharger PDF (FR, 3.2 Mo)
             </a>
           </div>
         </div>
-      </div>
-      
+      </li>
+
       <!-- Projet 2 : Site Vitrine -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <!-- En-tête -->
+      <li class="bg-white rounded-lg overflow-hidden shadow-md" role="listitem" aria-labelledby="vitrine-title">
         <div class="flex items-center p-4">
-          <img src="assets/images/logo.jpg" alt="Logo Site Vitrine" class="w-12 h-12 rounded-full object-cover">
+          <img src="assets/images/logo.jpg" alt="Logo du projet Site Vitrine" class="w-12 h-12 rounded-full object-cover">
           <div class="ml-4">
-            <h3 class="text-lg font-semibold text-gray-800">Site Vitrine</h3>
+            <h3 id="vitrine-title" class="text-lg font-semibold text-gray-800">Site Vitrine</h3>
             <p class="text-sm text-gray-500">Déployé sur Vercel</p>
           </div>
         </div>
-        <!-- Image principale -->
         <img src="assets/images/site-vitrine.jpg" alt="Aperçu du Site Vitrine" class="w-full h-48 object-cover">
-        <!-- Description et actions -->
         <div class="p-4">
           <p class="text-gray-700 text-sm mb-4">
-            Site vitrine moderne conçu avec TailwindCSS, hébergé sur Vercel, permettant de présenter visuellement la solution.
+            Site vitrine moderne conçu avec TailwindCSS, hébergé sur Vercel. Il présente une interface utilisateur réactive et élégante.
           </p>
           <div class="flex items-center justify-center space-x-4">
-            <a href="https://vercel.com/lykkss-projects/projet-tailwincss" target="_blank"
+            <a href="https://vercel.com/lykkss-projects/projet-tailwincss" target="_blank" rel="noopener"
+               aria-label="Voir le projet Site Vitrine sur Vercel – lien externe, nouvelle fenêtre"
                class="inline-block px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg shadow-md hover:bg-green-700 transition duration-300">
               Voir sur Vercel
             </a>
-            <a href="https://github.com/Lykkss/projet-tailwincss.git" target="_blank"
+            <a href="https://github.com/Lykkss/projet-tailwincss.git" target="_blank" rel="noopener"
+               aria-label="Voir le dépôt GitHub du projet Site Vitrine – lien externe, nouvelle fenêtre"
                class="inline-block px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
               GitHub
             </a>
           </div>
         </div>
-      </div>
-      
+      </li>
+
       <!-- Projet 3 : Festival Website -->
-      <div class="bg-white rounded-lg overflow-hidden shadow-md">
-        <!-- En-tête -->
+      <li class="bg-white rounded-lg overflow-hidden shadow-md" role="listitem" aria-labelledby="festival-title">
         <div class="flex items-center p-4">
-          <img src="assets/images/logo.jpg" alt="Logo Festival Website" class="w-12 h-12 rounded-full object-cover">
+          <img src="assets/images/logo.jpg" alt="Logo du projet Festival Website" class="w-12 h-12 rounded-full object-cover">
           <div class="ml-4">
-            <h3 class="text-lg font-semibold text-gray-800">Festival Website</h3>
-            <p class="text-sm text-gray-500">ReactJS + TailwindCSS | WordPress backend</p>
+            <h3 id="festival-title" class="text-lg font-semibold text-gray-800">Festival Website</h3>
+            <p class="text-sm text-gray-500">ReactJS + TailwindCSS, WordPress</p>
           </div>
         </div>
-        <!-- Image principale -->
-        <img src="assets/images/festival.jpg" alt="Aperçu du Festival Website" class="w-full h-48 object-cover">
-        <!-- Description et actions -->
+        <img src="assets/images/festival.jpg" alt="Aperçu du projet Festival Website" class="w-full h-48 object-cover">
         <div class="p-4">
           <p class="text-gray-700 text-sm mb-4">
-            Site interactif pour un festival, réalisé en ReactJS avec TailwindCSS pour le front-end et WordPress pour le back-end. Documentation fournie.
+            Site interactif pour un festival, réalisé avec ReactJS, TailwindCSS et un back-end WordPress. La documentation complète est fournie.
           </p>
           <div class="flex items-center justify-center space-x-4">
-            <a href="https://github.com/Lykkss/react-frontend.git" target="_blank"
+            <a href="https://github.com/Lykkss/react-frontend.git" target="_blank" rel="noopener"
+               aria-label="Voir le dépôt GitHub du projet Festival Website – lien externe, nouvelle fenêtre"
                class="inline-block px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-lg shadow-md hover:bg-gray-900 transition duration-300">
               GitHub
             </a>
-            <a href="assets/documents/festival-doc.pdf" download target="_blank"
+            <a href="assets/documents/festival-doc.pdf" download target="_blank" rel="noopener"
+               aria-label="Télécharger la documentation PDF du projet Festival Website, en français, taille : 1,8 mégaoctets"
                class="inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-              Télécharger Doc
+              Télécharger Doc (FR, 1.8 Mo)
             </a>
           </div>
         </div>
-      </div>
-      
-    </div>
+      </li>
+
+    </ul>
   </div>
 </section>

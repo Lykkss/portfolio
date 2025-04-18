@@ -1,10 +1,9 @@
-<!-- a-propos.component.html -->
 <section
   id="a-propos"
   class="bg-gray-100 p-8 md:p-16"
   style="min-height: 50vh;"
-  tabindex="0"
   aria-labelledby="a-propos-title"
+  role="region"
 >
   <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
     <div class="flex flex-col md:flex-row items-center">
@@ -12,23 +11,36 @@
       <div class="md:w-1/3 p-4 flex justify-center">
         <img
           src="assets/images/portfolio.jpg"
-          alt="Photo de Quaglieri Lisa"
+          alt="Portrait de Lisa Quaglieri"
           class="rounded-full w-32 h-32 border-4 border-blue-500 shadow-lg transition-transform duration-300 hover:scale-105"
         />
       </div>
+
       <!-- Contenu textuel -->
       <div class="md:w-2/3 p-4">
+        <!-- H2 pour respecter la hiérarchie après le H1 dans le header -->
         <h2 id="a-propos-title" class="text-3xl font-bold text-gray-800 mb-2">
           À propos de moi
         </h2>
+
         <p class="text-gray-600 text-base">
-          Je suis Quaglieri Lisa, passionnée par le développement web et la cybersécurité. Forte d'une expérience en front-end et back-end, je m'attache à créer des interfaces innovantes et sécurisées.
+          Je suis <strong>Lisa Quaglieri</strong>, passionnée par le développement web et la cybersécurité. Forte d'une expérience en front-end et back-end, je m'attache à créer des interfaces innovantes et sécurisées.
         </p>
-        <p class="text-gray-600 mt-2">
-          <strong>Objectif de vie :</strong> Contribuer à la sécurité des systèmes en intégrant une équipe Blue Team dynamique.
+
+        <!-- Objectif de vie -->
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">
+          Objectif de vie
+        </h3>
+        <p class="text-gray-600 mt-1">
+          Contribuer à la sécurité des systèmes en intégrant une équipe Blue Team dynamique.
         </p>
-        <p class="text-gray-600 mt-2">
-          <strong>Soft skill :</strong> Innovation, persévérance et amélioration continue.
+
+        <!-- Soft skills -->
+        <h3 class="text-xl font-semibold text-gray-800 mt-4">
+          Soft skills
+        </h3>
+        <p class="text-gray-600 mt-1">
+          Innovation, persévérance et amélioration continue.
         </p>
       </div>
     </div>

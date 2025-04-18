@@ -1,76 +1,68 @@
-<!-- parcours.component.html -->
-<section id="parcours" class="bg-white p-6" tabindex="0" aria-labelledby="parcours-header">
+<section id="parcours" class="bg-white p-6" aria-labelledby="parcours-title" role="region">
   <div class="container mx-auto">
     <!-- En-tête de la section -->
-    <header id="parcours-header" class="mb-12 text-center">
+    <header class="mb-12 text-center">
       <p class="font-medium text-blue-500">Mon Parcours</p>
-      <h1 class="mt-2 text-3xl font-semibold text-gray-800">Formations & Diplômes</h1>
+      <h2 id="parcours-title" class="mt-2 text-3xl font-semibold text-gray-800">Formations & Diplômes</h2>
       <p class="mt-3 text-gray-500">
         Découvrez ici mes formations académiques et mes diplômes.
       </p>
     </header>
 
-    <!-- Container de la frise chronologique -->
-    <div class="relative wrap overflow-hidden p-10 h-full">
-      <!-- Ligne verticale centrale -->
-      <div class="absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+    <!-- Timeline avec trait central -->
+    <div class="relative wrap overflow-hidden p-10 h-full" role="list" aria-label="Frise chronologique des diplômes et formations">
       
-      <!-- Élément de la timeline : Europass Mobility (2019) -->
-      <div class="mb-8 flex justify-between items-center w-full">
+      <!-- Trait vertical central (à garder) -->
+      <div class="absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+
+      <!-- Événement : Europass Mobility -->
+      <div class="mb-8 flex justify-between items-center w-full" role="listitem" aria-labelledby="event-2019-title">
         <div class="order-1 w-5/12"></div>
         <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full" aria-hidden="true">
           <span class="mx-auto font-semibold text-white">2019</span>
         </div>
         <div class="order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4">
-          <h3 class="mb-1 font-bold text-gray-800 text-xl">Europass Mobility</h3>
-          <p class="text-sm text-gray-600">
-            Programme Erasmus et découverte interculturelle.
-          </p>
+          <h3 id="event-2019-title" class="mb-1 font-bold text-gray-800 text-xl">Europass Mobility</h3>
+          <p class="text-sm text-gray-600">Programme Erasmus et découverte interculturelle.</p>
         </div>
       </div>
-      
-      <!-- Élément de la timeline : BTS Métier de l'Esthétique (2020) -->
-      <div class="mb-8 flex justify-between items-center w-full">
+
+      <!-- Événement : BTS -->
+      <div class="mb-8 flex justify-between items-center w-full" role="listitem" aria-labelledby="event-2020-title">
         <div class="order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4">
-          <h3 class="mb-1 font-bold text-gray-800 text-xl">BTS Métier de l'Esthétique</h3>
-          <p class="text-sm text-gray-600">
-            Cosmétique et Parfumerie – Option Management (Lycée Saint Joseph).
-          </p>
+          <h3 id="event-2020-title" class="mb-1 font-bold text-gray-800 text-xl">BTS Métier de l'Esthétique</h3>
+          <p class="text-sm text-gray-600">Cosmétique et Parfumerie – Option Management (Lycée Saint Joseph).</p>
         </div>
         <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full" aria-hidden="true">
           <span class="mx-auto font-semibold text-white">2020</span>
         </div>
         <div class="order-1 w-5/12"></div>
       </div>
-      
-      <!-- Élément de la timeline : Bachelor Chef de Projet Web (2021) -->
-      <div class="mb-8 flex justify-between items-center w-full">
+
+      <!-- Événement : Bachelor -->
+      <div class="mb-8 flex justify-between items-center w-full" role="listitem" aria-labelledby="event-2021-title">
         <div class="order-1 w-5/12"></div>
         <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full" aria-hidden="true">
           <span class="mx-auto font-semibold text-white">2021</span>
         </div>
         <div class="order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4">
-          <h3 class="mb-1 font-bold text-gray-800 text-xl">Bachelor Chef de Projet Web</h3>
-          <p class="text-sm text-gray-600">
-            Stratégie digitale – CCI, Nîmes.
-          </p>
+          <h3 id="event-2021-title" class="mb-1 font-bold text-gray-800 text-xl">Bachelor Chef de Projet Web</h3>
+          <p class="text-sm text-gray-600">Stratégie digitale – CCI, Nîmes.</p>
         </div>
       </div>
-      
-      <!-- Élément de la timeline : Ynov Campus (2024 - 2027) -->
-      <div class="mb-8 flex justify-between items-center w-full">
+
+      <!-- Événement : Ynov Campus -->
+      <div class="mb-8 flex justify-between items-center w-full" role="listitem" aria-labelledby="event-2024-title">
         <div class="order-1 bg-blue-200 rounded-lg shadow-xl w-5/12 px-6 py-4">
-          <h3 class="mb-1 font-bold text-gray-800 text-xl">Ynov Campus</h3>
-          <p class="text-sm text-gray-600">
-            Formation supérieure en stratégie digitale (2024 - 2027).
-          </p>
+          <h3 id="event-2024-title" class="mb-1 font-bold text-gray-800 text-xl">Ynov Campus</h3>
+          <p class="text-sm text-gray-600">Formation supérieure en stratégie digitale (2024 - 2027).</p>
         </div>
         <div class="z-20 flex items-center order-1 bg-blue-500 shadow-xl w-10 h-10 rounded-full" aria-hidden="true">
           <span class="mx-auto font-semibold text-white">2024</span>
         </div>
         <div class="order-1 w-5/12"></div>
       </div>
-      
+
     </div>
   </div>
 </section>
